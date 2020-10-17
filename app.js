@@ -4,6 +4,11 @@ const btn = document.getElementById("flipButton");
 const colorTxt = document.querySelector(".container h2 span");
 
 btn.addEventListener('click', function(){
-    document.body.style.backgroundColor = colors[0];
-    colorTxt.textContent = colors[0]
+    const rndmNum = getRandom()
+    document.body.style.backgroundColor = colors[rndmNum];
+    colorTxt.textContent = colors[rndmNum]
 })
+
+function getRandom() {
+    return Math.floor(Math.random() * colors.length);
+}
