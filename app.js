@@ -17,3 +17,12 @@ btn.addEventListener('click', function(){
 function getRandom() {
     return Math.floor(Math.random() * hex.length);
 }
+
+const burger = document.getElementsByClassName("burger")[0]
+const navLinks = document.getElementsByClassName("nav-links")[0]
+const nav = document.getElementsByTagName("nav")[0]
+
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active')
+    nav.classList.toggle('active')
+})
