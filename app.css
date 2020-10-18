@@ -195,6 +195,7 @@ margin-bottom: 2.5rem;
     letter-spacing: var(--spacing);
     display: inline-block;
     font-weight: 700;
+    width: 9rem;
     transition: var(--transition);
     border: 2px solid var(--clr-black);
     cursor: pointer;
@@ -205,10 +206,9 @@ margin-bottom: 2.5rem;
     padding: 0.50rem 1.25rem;
 }
 .material-icons {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: var(--spacing);
-  display: inline-block;
   margin: -0.3rem 0.1rem 0 -0.4rem;
 }
 .btn-hero:hover {
