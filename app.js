@@ -21,8 +21,10 @@ function getRandom() {
 const burger = document.getElementsByClassName("burger")[0]
 const navLinks = document.getElementsByClassName("nav-links")[0]
 const nav = document.getElementsByTagName("nav")[0]
+const main = document.getElementsByTagName("main")[0]
 
 burger.addEventListener('click', () => {
     navLinks.classList.toggle('active')
     nav.classList.toggle('active')
+    main.classList.toggle('active')
 })

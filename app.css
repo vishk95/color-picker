@@ -146,7 +146,6 @@ nav {
     max-width: var(--fixed-width);
     margin: 0 auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 .nav-center h4{
@@ -194,7 +193,6 @@ color: var(--clr-primary-5);
   }
   .nav-center {
     flex-direction: column;
-    align-items: flex-start;
   }
   nav.active{
     height: 12rem;
@@ -208,11 +206,14 @@ color: var(--clr-primary-5);
     flex-direction: column;
   }
   .nav-links li{
-    text-align: center;
+    align-self: center;
     padding: 0.25rem 0 0.25rem 0;
   }
   .nav-links.active{
     display: flex;
+  }
+  main.active{
+    min-height:calc(100vh - 19rem);
   }
 }
 
