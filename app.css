@@ -190,7 +190,7 @@ margin-bottom: 2.5rem;
 .btn-hero {
     font-family: var(--ff-primary);
     text-transform: uppercase;
-    background: transparent;
+    background: var(#e9e9e9);
     color: var(--clr-black);
     letter-spacing: var(--spacing);
     display: inline-block;
@@ -207,8 +207,4 @@ margin-bottom: 2.5rem;
 .btn-hero:hover {
     color: var(--clr-white);
     background: var(--clr-black);
-}
-#flipButton {
-  color: var(--clr-white);
-  background: var(--clr-black);
 }
