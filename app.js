@@ -18,6 +18,7 @@ btn.addEventListener('click', function(){
     finalHex = randomHex();
     document.body.style.backgroundColor = finalHex;
     colorTxt.textContent = finalHex;
+    copyButton.textContent = "COPY"
 })
 
 function randomHex(){
@@ -32,6 +33,8 @@ function getRandom() {
     return Math.floor(Math.random() * hex.length);
 }
 
+const copyButton = document.getElementById("copyButton");
+
 function copyHex() {
 
     var dummy = document.createElement("textarea");
@@ -44,5 +47,5 @@ function copyHex() {
     document.execCommand("copy");
     document.body.removeChild(dummy);
 
-    alert("Copied Hex: " + colorTxt.textContent)
+    copyButton.textContent = "COPIED!"
 }
