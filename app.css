@@ -186,6 +186,9 @@ color: var(--clr-primary-5);
 }
 
 @media (max-width: 600px){
+  body{
+    overflow: hidden;
+  }
   .burger{
     display: flex;
   }
